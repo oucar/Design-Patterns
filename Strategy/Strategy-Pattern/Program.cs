@@ -6,7 +6,6 @@ namespace Strategy_Pattern
 {
     class Program
     {
-        //
         static void Main(string[] args)
         {
             Duck mallard = new MallardDuck();
@@ -24,9 +23,6 @@ namespace Strategy_Pattern
             Duck rubber = new RubberDuck();
             rubber.PerformFly();
             rubber.PerformQuack();
-
-
-
         }
     }
 }
