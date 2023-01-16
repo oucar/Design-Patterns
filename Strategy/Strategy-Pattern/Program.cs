@@ -12,6 +12,21 @@ namespace Strategy_Pattern
             Duck mallard = new MallardDuck();
             mallard.PerformFly();
             mallard.PerformQuack();
+            
+            Console.WriteLine("-------------------------");
+
+            Duck model = new ModelDuck();
+            model.PerformFly();
+            model.PerformQuack();
+
+            Console.WriteLine("-------------------------");
+
+            Duck rubber = new RubberDuck();
+            rubber.PerformFly();
+            rubber.PerformQuack();
+
+
+
         }
     }
 }
