@@ -1,5 +1,7 @@
-﻿using Observer.Observers.Abstractions;
+﻿using System.Collections.Generic;
+using Observer.Observers.Abstractions;
 using Observer.Subjects.Abstractions;
+
 
 namespace Observer.Subjects
 {
@@ -25,7 +27,7 @@ namespace Observer.Subjects
             NotifyObservers();
         }
 
-        public void SetMeasurement(double temperature, double humidity, double pressure)
+        public void SetMeasurements(double temperature, double humidity, double pressure)
         {
             _temperature = temperature;
             _humidity = humidity;
