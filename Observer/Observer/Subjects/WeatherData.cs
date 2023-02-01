@@ -7,6 +7,7 @@ namespace Observer.Subjects
 {
 
     // WeatherData implements ISubject interface
+    // It is being used to update the displays
     public class WeatherData : ISubject
     {
         // array to hold the observers
