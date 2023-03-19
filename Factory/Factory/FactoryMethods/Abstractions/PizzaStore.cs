@@ -6,7 +6,7 @@ namespace Factory.FactoryMethods.Abstractions
     {
         protected abstract Pizza CreatePizza(string item);
 
-        protected Pizza OrderPizza(string type)
+        public Pizza OrderPizza(string type)
         {
             Pizza pizza = CreatePizza(type);
             Console.WriteLine("--- Making a " + pizza.Name + " ---");

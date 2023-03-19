@@ -1,5 +1,6 @@
 ﻿using Factory.FactoryMethods.Abstractions;
 using Factory.Products.Abstractions;
+using Factory.Products.New_York;
 
 namespace Factory.FactoryMethods
 {

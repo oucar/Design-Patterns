@@ -23,5 +23,3 @@ namespace Factory.Products.New_York
         }
     }
 }
-    }
-}
