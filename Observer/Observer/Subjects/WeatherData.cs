@@ -19,7 +19,7 @@ namespace Observer.Subjects
         // constructor
         public WeatherData()
         {
-            // initialize the array
+            // initialize the observer array
             _observers = new List<IObserver>();
         }
 
