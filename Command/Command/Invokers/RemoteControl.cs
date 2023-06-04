@@ -10,7 +10,8 @@ namespace Command.Invokers
         #region Fields
         private readonly ICommand[] _onCommands;
         private readonly ICommand[] _offCommands;
-        private readonly int numberOfCommands = 7;
+        // Number of commands that our remote controller can support
+        private readonly int numberOfCommands = 10;
         #endregion
 
         #region Constructors
@@ -39,12 +40,12 @@ namespace Command.Invokers
             _offCommands[slot]  = offCommand;
         }
 
-        public void onButtonWasPushed(int slot)
+        public void OnButtonWasPushed(int slot)
         {
             _onCommands[slot].Execute();
         }
 
-        public void offButtonWasPushed(int slot)
+        public void OffButtonWasPushed(int slot)
         {
             _offCommands[slot].Execute();
         }
@@ -61,9 +62,7 @@ namespace Command.Invokers
             }
 
             return sb.ToString();
-
         }
         #endregion
-
     }
 }

@@ -1,6 +1,9 @@
 ### Command Pattern
 - Command is a behavioral design pattern that turns a request into a stand-alone object **that contains all information about the request**. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and **support undoable operations**.
-
+- Use the Command pattern when you want to **parametrize objects with operations**.
+- Use the Command pattern when you want to implement reversible operations.
+- Single Responsibility Principle. You can decouple classes that invoke operations from classes that perform these operations. Open/Closed Principle. You can introduce new commands into the app without breaking existing client code
+- Downside: the code may become more complicated since you’re introducing a whole new layer between senders and receivers.
 
 
 ![](https://refactoring.guru/images/patterns/diagrams/command/structure.png?id=1cd7833638f4c43630f4a84017d31195)
