@@ -17,4 +17,3 @@
 - Memento Readme
 - Prototype Readme
 - Visitor Readme
-- 
