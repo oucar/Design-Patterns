@@ -1,0 +1,22 @@
+### State Pattern
+- The State Pattern allows an object to alter its behavior when internal state changes. The object will appear to change its class.
+-  Use the State pattern when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently.
+-  Use the pattern when you have a class polluted with massive conditionals that alter how the class behaves according to the current values of the class’s fields.
+-  Use State when you have a lot of duplicate code across similar states and transitions of a condition-based state machine. 
+- Usually a good choice in game development.
+- Applying the pattern can be overkill if a state machine has only a few states or rarely changes.
+---
+- Unlike a procedural state machine, the State Pattern represent each state as a full-blown class.
+- The Context gets its behavior by delegating to the current state objects ist is composed with.
+- By encapsulating each state into a class, we localize any changes that will need to be made.
+- The State and Strategy Patterns have the same class diagram, but they differ in intent.
+- The Strategy pattern typically configures Context classes with a behavior or an algorithm. Meanhile the State Pattern allows Context to change its behavior as the state of the Context changes.
+- State transitions can be controlled by the State classes or by the Context classes.
+- Using the State Pattern will typically result in a greater number of classes in your design.
+- State classes may be shared among Context instances.
+---
+![](https://refactoring.guru/images/patterns/diagrams/state/structure-en.png?id=38c5cc3a610a201e5bc26a441c63d327)
+- 1: Context stores a reference to one of the concrete state objects and delegates to it all state-specific work. The context communicates with the state object via the state interface. The context exposes a setter for passing it a new state object.
+- 2: The State interface declares the state-specific methods. These methods should make sense for all concrete states because you don’t want some of your states to have useless methods that will never be called.
+- 3: Concrete States provide their own implementations for the state-specific methods. To avoid duplication of similar code across multiple states, you may provide intermediate abstract classes that encapsulate some common behavior. State objects may store a backreference to the context object. Through this reference, the state can fetch any required info from the context object, as well as initiate state transitions.
+- 4: Both context and concrete states can set the next state of the context and perform the actual state transition by replacing the state object linked to the context.
