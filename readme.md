@@ -5,8 +5,8 @@
 
 
 #### TO DO:
-- Singleton Code
-- Composite Code
+- ~~Singleton Code~~
+- ~~Composite Code~~
 - Proxy Readme + Code
 - Compound Patterns Readme
 - Builder Readme + Code
@@ -14,6 +14,6 @@
 - Flyweight Readme
 - Interpreter Readme
 - Mediator Readme
-- Memento Readme
+- Memento ReadmeS
 - Prototype Readme
 - Visitor Readme
