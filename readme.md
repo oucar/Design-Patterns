@@ -144,6 +144,52 @@ ISwitchable bulb = new Bulb();
 LightSwitch switch = new LightSwitch(bul);
 switch.TurnOn();
 ```
+--- 
+## Inheritance
+- A fundamental concept in object-oriented programming (OOP) where a class (subclass/derived class) can inherit properties and behaviors from another class (superclass/base class). It allows for code reuse and the creation of a hierarchy of classes.
+## Composition
+- Composition is a design principle where a class can be composed of other classes as parts or components. Unlike inheritance, which involves an "is-a" relationship, composition involves a "has-a" relationship. It promotes flexibility and code reuse by allowing objects to be composed of smaller, more manageable components.
+- Composition is the flexibility, Inhertiace is the structure. You need to balance these two in order to get good software.
+## Aggregation
+- Aggregation is a relationship where one object contains another object, but the contained object can exist independently. It's a "has-a" connection, indicating that the whole can be made up of parts, and these parts are not exclusive to a single whole.
+## Dependency Injection
+- Dependency Injection (DI) is a design pattern where the dependencies of a class are provided from the outside rather than created within the class. This helps in making classes more modular, testable, and maintainable by reducing tight coupling between components.
+## Polymorphism
+- Polymorphism allows objects of different types to be treated as objects of a common type. This can be achieved through method overriding (runtime polymorphism) or method overloading (compile-time polymorphism). It enables more generic and flexible code, as the same interface can be used with different implementations.
+## Encapsulation
+- Encapsulation is a principle that involves bundling data (attributes) and methods that operate on that data into a single unit known as a class. It helps in hiding the internal details of an object and exposing only what is necessary. Access to the internal state is controlled through getters and setters.
+## Abstraction
+- Abstraction is the process of simplifying complex systems by modeling classes based on their essential characteristics. It involves focusing on the relevant details while ignoring unnecessary complexities. Abstract classes and interfaces are used to define the structure and behavior of objects without providing a complete implementation.
+## Delegation
+- Delegation is a design pattern where an object passes on a task to another object, rather than performing the task itself. It promotes code reuse and flexibility by allowing objects to collaborate and share responsibilities. Delegation is often used in scenarios where a class can benefit from the functionality of another class without being tightly coupled to it.
+
+### Inheritance, Composition, and Aggregation
+### Inheritance
+
+- **Relationship Type:** "Is-a" relationship.
+- **Nature:** Creates a hierarchy of classes, where a derived class inherits properties and behaviors from a base class.
+- **Dependency:** High dependency between the derived and base classes.
+- **Reuse:** Promotes code reuse by inheriting features from the base class.
+- **Flexibility:** Can lead to a rigid class structure, as changes in the base class may affect derived classes.
+
+### Composition
+
+- **Relationship Type:** "Has-a" relationship.
+- **Nature:** Involves creating a class that is composed of other classes as parts or components.
+- **Dependency:** Relatively low dependency compared to inheritance.
+- **Reuse:** Promotes flexibility and code reuse by allowing objects to be composed of smaller, independent components.
+- **Flexibility:** Provides greater flexibility, as changes in one component do not necessarily affect the entire structure.
+
+### Aggregation
+
+- **Relationship Type:** "Has-a" relationship.
+- **Nature:** Represents a looser form of composition, where one object contains another, but the contained object can exist independently.
+- **Dependency:** Moderate dependency, less strict than composition.
+- **Reuse:** Allows for flexibility and sharing of parts among multiple wholes.
+- **Flexibility:** Provides a more flexible relationship, as parts can be shared among different wholes without tight coupling.
+
+In summary, while inheritance establishes a hierarchy with high dependency, composition and aggregation offer more flexibility by allowing objects to be composed of smaller, independent parts. Composition involves a stricter relationship, whereas aggregation is more relaxed, allowing parts to exist independently and be shared among different wholes. The choice between them depends on the design goals and the level of coupling desired in a system.
+
 
 #### Links
 - https://www.freecodecamp.org/news/the-basic-design-patterns-all-developers-need-to-know/
