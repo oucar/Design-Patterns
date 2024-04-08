@@ -11,5 +11,5 @@
 - Single Responsibility Principle. You can move the product creation code into one place in the program, making the code easier to support.
 - Open/Closed Principle. You can introduce new types of products into the program without breaking existing client code.
 
-## Note
-- I put all the classes, interfaces etc. in one file for the sake of simplicity.
+# Note
+- I put all the classes, interfaces etc. in one folder for the sake of simplicity.
