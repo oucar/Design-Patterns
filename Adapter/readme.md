@@ -1,4 +1,4 @@
-### Adapter Pattern
+### Adapter Pattern (Wrapper)
 - Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
 - Allows us to use a client with an incompatible interface by creating an Adapter
 ---
